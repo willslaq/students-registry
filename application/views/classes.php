@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Lista de Alunos</title>
+    <title>Lista de Turmas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -70,25 +70,27 @@
 </head>
 
 <body>
-    <h1>Lista de Alunos</h1>
+    <h1>Lista de Turmas</h1>
     <div class="btn-container">
-        <a href="<?= base_url('students/form') ?>" class="btn">Cadastrar Novo Aluno</a>
+        <a href="<?= base_url('classes/form') ?>" class="btn">Cadastrar Nova Turma</a>
     </div>
     <table>
         <tr>
             <th>ID</th>
             <th>Nome</th>
-            <th>Nascimento</th>
+            <th>Número</th>
+            <th>Professor(a)</th>
             <th>Ações</th>
         </tr>
-        <?php foreach ($students as $student) : ?>
+        <?php foreach ($classes as $class) : ?>
             <tr>
-                <td><?= $student->id ?></td>
-                <td><?= $student->name ?></td>
-                <td><?= $student->birth_date ?></td>
+                <td><?= $class->id ?></td>
+                <td><?= $class->name ?></td>
+                <td><?= $class->number ?></td>
+                <td><?= $class->teacher ?></td>
                 <td>
-                    <a href="<?= base_url('student/edit/' . $student->id) ?>">Editar</a>
-                    <a href="<?= base_url('student/delete/' . $student->id) ?>">Excluir</a>
+                    <a href="#">Editar</a>
+                    <a href="#">Excluir</a>
                 </td>
             </tr>
         <?php endforeach; ?>
