@@ -47,7 +47,7 @@
     <p>Escolha uma opção:</p>
     <a href="<?= base_url('students') ?>">Alunos</a>
     <a href="<?= base_url('classes') ?>">Turmas</a>
-    <a href="<?= base_url('fitstudent') ?>">Enturmar</a>
+    <a href="<?= base_url('fit-students') ?>">Enturmar</a>
 </body>
 
 </html>

@@ -17,6 +17,6 @@ class Home extends CI_Controller {
 
     public function fitstudents() {
         // Lógica para a página 3
-        $this->load->view('fitstudents');
+        $this->load->view('fit-students');
     }
 }
