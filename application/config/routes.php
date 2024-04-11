@@ -55,6 +55,7 @@ $route['classes'] = 'Classes/index';
 $route['students/form'] = 'StudentsCreate/index';
 $route['classes/form'] = 'ClassesCreate/index';
 $route['fit-students'] = 'FitStudents/index';
+$route['students-report'] = 'StudentsReport/generate';
 $route['api/students/create'] = 'StudentsCreate/create';
 $route['api/classes/create'] = 'ClassesCreate/create';
 $route['api/fit-students/save'] = 'FitStudents/save';

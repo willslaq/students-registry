@@ -28,6 +28,7 @@
             display: block;
             text-align: center;
             margin: 10px auto;
+            width: 200px;
             padding: 5px 10px;
             background-color: #007bff;
             color: #fff;
@@ -48,6 +49,7 @@
     <a href="<?= base_url('students') ?>">Alunos</a>
     <a href="<?= base_url('classes') ?>">Turmas</a>
     <a href="<?= base_url('fit-students') ?>">Enturmar</a>
+    <a href="<?= base_url('students-report') ?>">Gerar Relatório</a>
 </body>
 
 </html>
