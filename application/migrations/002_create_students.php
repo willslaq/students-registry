@@ -51,8 +51,8 @@ class Migration_create_students extends CI_Migration
             )
         ));
         $this->dbforge->add_key('id', TRUE);
-        $this->dbforge->add_foreign_key('classes_id', 'classes', 'id');
         $this->dbforge->create_table('students');
+        $this->dbforge->add_field('CONSTRAINT FOREIGN KEY (classes_id) REFERENCES classes(id)');
     }
 
     public function down()
