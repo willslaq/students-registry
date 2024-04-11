@@ -16,11 +16,12 @@ class FitStudents extends CI_Controller
         $this->load->view('fit_students', $data);
     }
 
-    public function salvar()
+    public function save()
     {
         $studentId = $this->input->post('studentId');
         $classId = $this->input->post('classId');
 
-        redirect('vinculo');
+        $this->Student_model->updateClassId($studentId, $classId);
+        redirect('home');
     }
 }

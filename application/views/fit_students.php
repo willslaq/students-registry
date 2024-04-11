@@ -58,9 +58,9 @@
 <body>
     <h1>Vínculo Aluno-Turma</h1>
 
-    <form action="<?= base_url('api/fit-students') ?>" method="post">
+    <form action="<?= base_url('api/fit-students/save') ?>" method="post">
         <label for="aluno">Aluno:</label>
-        <select name="student" id="student">
+        <select name="studentId" id="studentId">
             <?php foreach ($students as $student) : ?>
                 <option value="<?= $student->id ?>"><?= $student->name ?></option>
             <?php endforeach; ?>
@@ -69,7 +69,7 @@
         <br>
 
         <label for="turma">Turma:</label>
-        <select name="classes" id="classes">
+        <select name="classId" id="classId">
             <?php foreach ($classes as $class) : ?>
                 <option value="<?= $class->id ?>"><?= $class->name ?></option>
             <?php endforeach; ?>

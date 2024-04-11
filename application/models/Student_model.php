@@ -21,6 +21,13 @@ class Student_model extends CI_Model
         return $this->db->get_where('students', array('id' => $id))->row();
     }
 
+    public function updateClassId($studentId, $classId)
+    {
+        log_message('info', 'Updating class ID for student: ' . $studentId);
+        $this->db->where('id', $studentId);
+        $this->db->update('students', ['classes_id' => $classId]);
+    }
+
     public function deleteStudent($id)
     {
         $this->db->where('id', $id);
