@@ -54,6 +54,7 @@ $route['students'] = 'Students/index';
 $route['classes'] = 'Classes/index';
 $route['students/form'] = 'StudentsCreate/index';
 $route['classes/form'] = 'ClassesCreate/index';
+$route['fit-students'] = 'FitStudents/index';
 $route['api/students/create'] = 'StudentsCreate/create';
 $route['api/classes/create'] = 'ClassesCreate/create';
 $route['404_override'] = '';
