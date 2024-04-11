@@ -140,7 +140,7 @@ class CI_DB_pdo_result extends CI_DB_result {
 
 			return $retval;
 		}
-		catch (Exception $e)
+		catch (Throwable $e)
 		{
 			if ($this->db->db_debug)
 			{
